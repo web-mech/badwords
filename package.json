@@ -2,7 +2,7 @@
   "name": "badwords",
   "version": "0.0.1",
   "description": "A javascript filter for bad words",
-  "main": "./lib/badwords.js",
+  "main": "./lib/badwords",
   "directories": {
     "test": "test"
   },
