@@ -1,0 +1,28 @@
+{
+  "name": "badwords",
+  "version": "0.0.1",
+  "description": "A javascript filter for bad words",
+  "main": "./lib/badwords.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/web-mech/badwords.git"
+  },
+  "keywords": [
+    "curse",
+    "words",
+    "profanity",
+    "filter"
+  ],
+  "devDependencies":{
+    "mocha":"1.14.0",
+    "better-assert":"1.0.0"
+  },
+  "author": "Mike P.",
+  "license": "MIT"
+}
