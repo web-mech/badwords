@@ -18,4 +18,15 @@ Don't be an ******
 
 #String Helper
 
+```javascript
+require('bad-words');
+
+console.log("Don't be an ash0le".clean());
+```
+Outputs:
+
+Don't be an ******
+
+
+
 
