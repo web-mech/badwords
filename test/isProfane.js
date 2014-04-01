@@ -12,5 +12,9 @@ describe('filter', function(){
 		it("Should return false when no bad word is detected",function(){
 			assert(filter.isProfane("wife") === false);
 		});
+
+		it("Should be able to detect a bad word in a sentence",function(){
+			assert(filter.isProfane("that person is an ash0le"));
+		})
 	});
 });
