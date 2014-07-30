@@ -1,32 +1,53 @@
-badwords
+badwords v0.5.0
 ========
 
 A javascript filter for badwords
 
-```javascript
+```
 npm install bad-words
 ```
 #Examples
-```javascript
+```
 var filter = require('bad-words');
 
 console.log(filter.clean("Don't be an ash0le"));
 ```
-Outputs:
-
+#####Outputs:
+```
 Don't be an ******
+```
 
+###Factory
+Allows the creation of new instances of a filter
+
+```
+var filter = require('bad-words');
+var customFilter = new filter.Factory();
+
+customFilter.clean('Bad words...');
+```
+
+###Placeholder Overrides
+
+```
+var filter = require('bad-words');
+var customFilter = new filter.Factory({ placeHolder: 'x'});
+
+customFilter.clean('Don't be an ash0le');
+```
+
+#####Outputs:
+```
+Don't be an xxxxxx
+```
 #String Helper
 
-```javascript
-require('bad-words');
+Will no longer be supported and removed in the next release.
 
-console.log("Don't be an ash0le".clean());
+#Testing
 ```
-Outputs:
-
-Don't be an ******
-
+mocha
+```
 ========
 
 The MIT License (MIT)
