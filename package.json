@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha -R nyan"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
     "profanity",
     "filter"
   ],
+  "dependencies": {
+    "badwords-list": "^1.0.0"
+  },
   "devDependencies":{
     "mocha":"1.14.0",
     "better-assert":"1.0.0"
