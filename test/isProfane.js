@@ -16,5 +16,9 @@ describe('filter', function(){
 		it("Should be able to detect a bad word in a sentence",function(){
 			assert(filter.isProfane("that person is an ash0le"));
 		})
+
+		it('Should detect filtered words from badwords-list', function(){
+			assert(filter.isProfane('willies'));
+		});
 	});
 });

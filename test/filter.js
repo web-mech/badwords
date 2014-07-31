@@ -20,6 +20,5 @@ describe('filter', function(){
 			var customFilter = new filter.Factory({ placeHolder: 'x'});
 			assert(customFilter.clean('This is a hells good test') === 'This is a xxxxx good test');
 		});
-
 	});
 });
