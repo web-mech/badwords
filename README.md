@@ -1,4 +1,4 @@
-badwords v0.5.0
+badwords v0.6.0
 ========
 
 A javascript filter for badwords
