@@ -40,9 +40,6 @@ customFilter.clean('Don't be an ash0le');
 ```
 Don't be an xxxxxx
 ```
-#String Helper
-
-Will no longer be supported and removed in the next release.
 
 #Testing
 ```
