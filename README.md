@@ -1,4 +1,4 @@
-badwords v1.0.0
+bad-words v1.1.0
 ========
 
 A javascript filter for badwords
@@ -40,9 +40,17 @@ Don't be an xxxxxx
 
 #Testing
 ```
-mocha
+npm test
 ```
 ========
+
+
+###Release Notes
+- v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list
+
+========
+
+###License
 
 The MIT License (MIT)
 
