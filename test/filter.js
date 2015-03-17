@@ -1,6 +1,7 @@
 require('assert');
-var filter = require('../lib/badwords.js');
-var assert = require('better-assert');
+var Filter = require('../lib/badwords.js'),
+	filter = new Filter(),
+	assert = require('better-assert');
 
 describe('filter', function(){
 	describe('clean',function(){
@@ -17,7 +18,7 @@ describe('filter', function(){
 		});
 
 		it('Should replace a string with proper placeholder when overridden', function(){
-			var customFilter = new filter.Factory({ placeHolder: 'x'});
+			var customFilter = new Filter({ placeHolder: 'x'});
 			assert(customFilter.clean('This is a hells good test') === 'This is a xxxxx good test');
 		});
 	});

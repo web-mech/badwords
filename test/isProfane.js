@@ -1,10 +1,10 @@
 require('assert');
-var filter = require('../lib/badwords.js');
-var assert = require('better-assert');
+var Filter = require('../lib/badwords.js'),
+	filter = new Filter(),
+	assert = require('better-assert');
 
 describe('filter', function(){
 	describe('isProfane',function(){
-
 		it("Should detect a bad word and return a boolean value",function(){
 			assert(filter.isProfane("ash0le"));
 		});
@@ -15,7 +15,7 @@ describe('filter', function(){
 
 		it("Should be able to detect a bad word in a sentence",function(){
 			assert(filter.isProfane("that person is an ash0le"));
-		})
+		});
 
 		it('Should detect filtered words from badwords-list', function(){
 			assert(filter.isProfane('willies'));

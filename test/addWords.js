@@ -1,6 +1,7 @@
 require('assert');
-var filter = require('../lib/badwords.js');
-var assert = require('better-assert');
+var Filter = require('../lib/badwords.js'),
+  filter = new Filter(),
+  assert = require('better-assert');
 
 describe('filter', function(){
   describe('addWords',function(){
