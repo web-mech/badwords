@@ -20,7 +20,8 @@
     "filter"
   ],
   "dependencies": {
-    "badwords-list": "^1.0.0"
+    "badwords-list": "^1.0.0",
+    "soundex": "^0.2.1"
   },
   "devDependencies": {
     "mocha": "1.14.0",
