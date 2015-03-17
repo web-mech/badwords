@@ -17,6 +17,10 @@ describe('filter', function(){
 			assert(filter.isProfane("that person is an ash0le"));
 		});
 
+		it('Should be able to detect profanity at the end of a sentence', function() {
+			assert(filter.isProfane("You're an asshole^ you are"));
+		});
+
 		it('Should detect filtered words from badwords-list', function(){
 			assert(filter.isProfane('willies'));
 		});
