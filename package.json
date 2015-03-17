@@ -1,6 +1,6 @@
 {
   "name": "bad-words",
-  "version": "0.6.1",
+  "version": "1.0.0",
   "description": "A javascript filter for bad words",
   "main": "./lib/badwords",
   "directories": {
@@ -22,9 +22,9 @@
   "dependencies": {
     "badwords-list": "^1.0.0"
   },
-  "devDependencies":{
-    "mocha":"1.14.0",
-    "better-assert":"1.0.0"
+  "devDependencies": {
+    "mocha": "1.14.0",
+    "better-assert": "1.0.0"
   },
   "author": "Mike P.",
   "license": "MIT"
