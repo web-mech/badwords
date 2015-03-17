@@ -1,4 +1,4 @@
-badwords v0.6.1
+badwords v1.0.0
 ========
 
 A javascript filter for badwords
@@ -6,34 +6,31 @@ A javascript filter for badwords
 ```
 npm install bad-words
 ```
+
 #Examples
 ```
-var filter = require('bad-words');
+var Filter = require('bad-words'),
+  filter = new Filter();
 
 console.log(filter.clean("Don't be an ash0le"));
 ```
+
 #####Outputs:
 ```
 Don't be an ******
 ```
 
-###Factory
-Allows the creation of new instances of a filter
-
-```
-var filter = require('bad-words');
-var customFilter = new filter.Factory();
-
-customFilter.clean('Bad words...');
-```
-
 ###Placeholder Overrides
-
 ```
-var filter = require('bad-words');
-var customFilter = new filter.Factory({ placeHolder: 'x'});
+var Filter = require('bad-words');
+var customFilter = new Filter({ placeHolder: 'x'});
 
 customFilter.clean('Don't be an ash0le');
+```
+
+###Regex Overrides
+```
+var filter = new Filter({ regex: /\*|\.|$/gi });
 ```
 
 #####Outputs:
