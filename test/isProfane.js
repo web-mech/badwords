@@ -24,10 +24,5 @@ describe('filter', function(){
 		it('Should detect filtered words from badwords-list', function(){
 			assert(filter.isProfane('willies'));
 		});
-
-		it('Should detect words not in the list but are similar using soundex', function() {
-			assert(filter.isProfane('biotch'));
-			assert(filter.isProfane('asswhole'));
-		});
 	});
 });
