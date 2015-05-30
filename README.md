@@ -46,7 +46,8 @@ npm test
 
 
 ###Release Notes
-- v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list
+- v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list.
+- v1.2.0 / May 29 2015: Removed soundex logic which resulted in many false positives within the isProfane test.
 
 ========
 
