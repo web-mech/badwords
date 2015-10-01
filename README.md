@@ -34,6 +34,13 @@ var filter = new Filter();
 filter.addWords(['some', 'bad', 'word']);
 
 filter.clean("some bad word!") //**** *** ****!
+
+//or
+
+var filter = new Filter({ list: ['some', 'bad', 'word'] }); 
+
+filter.clean("some bad word!") //**** *** ****!
+
 ```
 
 ##Testing
@@ -44,6 +51,7 @@ npm test
 ##Release Notes
 - v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list.
 - v1.2.0 / May 29 2015: Removed soundex logic which resulted in many false positives within the isProfane test.
+- v1.3.0 / Oct 1 2015: Updated local list and documentation. Added ability to pass a custom list of words during construction.
 
 
 ##License
