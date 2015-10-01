@@ -1,23 +1,17 @@
-bad-words v1.1.0
-========
-
+#bad-words v1.1.0
 A javascript filter for badwords
 
+##Installation
 ```
 npm install bad-words
 ```
 
-#Examples
+##Usage
 ```
 var Filter = require('bad-words'),
   filter = new Filter();
 
-console.log(filter.clean("Don't be an ash0le"));
-```
-
-#####Outputs:
-```
-Don't be an ******
+console.log(filter.clean("Don't be an ash0le")); //Don't be an ******
 ```
 
 ###Placeholder Overrides
@@ -25,7 +19,7 @@ Don't be an ******
 var Filter = require('bad-words');
 var customFilter = new Filter({ placeHolder: 'x'});
 
-customFilter.clean('Don't be an ash0le');
+customFilter.clean('Don't be an ash0le'); //Don't be an xxxxxx
 ```
 
 ###Regex Overrides
@@ -33,25 +27,26 @@ customFilter.clean('Don't be an ash0le');
 var filter = new Filter({ regex: /\*|\.|$/gi });
 ```
 
-#####Outputs:
+###Add words to the blacklist
 ```
-Don't be an xxxxxx
+var filter = new Filter(); 
+
+filter.addWords(['some', 'bad', 'word']);
+
+filter.clean("some bad word!") //**** *** ****!
 ```
 
-#Testing
+##Testing
 ```
 npm test
 ```
-========
 
-
-###Release Notes
+##Release Notes
 - v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list.
 - v1.2.0 / May 29 2015: Removed soundex logic which resulted in many false positives within the isProfane test.
 
-========
 
-###License
+##License
 
 The MIT License (MIT)
 
