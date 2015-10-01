@@ -1,4 +1,4 @@
-# bad-words v1.1.0
+# bad-words
 A javascript filter for badwords
 
 ## Installation
