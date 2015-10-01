@@ -1,12 +1,12 @@
-#bad-words v1.1.0
+# bad-words v1.1.0
 A javascript filter for badwords
 
-##Installation
+## Installation
 ```
 npm install bad-words
 ```
 
-##Usage
+## Usage
 ```
 var Filter = require('bad-words'),
   filter = new Filter();
@@ -14,7 +14,7 @@ var Filter = require('bad-words'),
 console.log(filter.clean("Don't be an ash0le")); //Don't be an ******
 ```
 
-###Placeholder Overrides
+### Placeholder Overrides
 ```
 var Filter = require('bad-words');
 var customFilter = new Filter({ placeHolder: 'x'});
@@ -22,12 +22,12 @@ var customFilter = new Filter({ placeHolder: 'x'});
 customFilter.clean('Don't be an ash0le'); //Don't be an xxxxxx
 ```
 
-###Regex Overrides
+### Regex Overrides
 ```
 var filter = new Filter({ regex: /\*|\.|$/gi });
 ```
 
-###Add words to the blacklist
+### Add words to the blacklist
 ```
 var filter = new Filter(); 
 
@@ -43,7 +43,7 @@ filter.clean("some bad word!") //**** *** ****!
 
 ```
 
-##Testing
+## Testing
 ```
 npm test
 ```
@@ -54,7 +54,7 @@ npm test
 - v1.3.0 / Oct 1 2015: Updated local list and documentation. Added ability to pass a custom list of words during construction.
 
 
-##License
+## License
 
 The MIT License (MIT)
 
