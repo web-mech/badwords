@@ -21,5 +21,12 @@ describe('filter', function(){
 			var customFilter = new Filter({ placeHolder: 'x'});
 			assert(customFilter.clean('This is a hells good test') === 'This is a xxxxx good test');
 		});
+
+		it('Should allow an instance of filter with an empty blacklist', function() {
+			var customFilter = new Filter({
+				emptyList: true
+			});
+			assert(customFilter.clean('This is a hells good test') === 'This is a hells good test');
+		});
 	});
 });
