@@ -43,6 +43,15 @@ filter.clean("some bad word!") //**** *** ****!
 
 ```
 
+### Remove words from the blacklist
+```
+var filter = new Filter(); 
+
+filter.removeWords('hells');
+
+filter.clean("some hells word!") //some hells word!
+```
+
 ## Testing
 ```
 npm test
