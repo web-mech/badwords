@@ -43,6 +43,12 @@ filter.clean("some bad word!") //**** *** ****!
 
 ```
 
+### Instantiate with an empty list
+```
+var filter = new Filter({ emptyList: true }); 
+filter.clean('hell this wont clean anything'); //hell this wont clean anything
+```
+
 ### Remove words from the blacklist
 ```
 var filter = new Filter(); 
@@ -61,7 +67,8 @@ npm test
 - v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list.
 - v1.2.0 / May 29 2015: Removed soundex logic which resulted in many false positives within the isProfane test.
 - v1.3.0 / Oct 1 2015: Updated local list and documentation. Added ability to pass a custom list of words during construction.
-- v1.4.0 / Sept 2 2016: Added removeWords feature
+- v1.4.0 / Sept 2 2016: Added removeWords feature. Added emptyList configuration parameter.
+- v1.4.1 / Sept 2 2016: Updated documentation.
 
 
 ## License
