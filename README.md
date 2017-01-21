@@ -69,6 +69,7 @@ npm test
 - v1.3.0 / Oct 1 2015: Updated local list and documentation. Added ability to pass a custom list of words during construction.
 - v1.4.0 / Sept 2 2016: Added removeWords feature. Added emptyList configuration parameter.
 - v1.4.1 / Sept 2 2016: Updated documentation.
+- v1.4.3 / Jan 21 2017: Add multilingual support for word filtering
 
 
 ## License
