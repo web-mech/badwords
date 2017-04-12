@@ -28,5 +28,10 @@ describe('filter', function(){
 			});
 			assert(customFilter.clean('This is a hells good test') === 'This is a hells good test');
 		});
+
+		it('Should tokenize words according to regex word boundaries',function(){
+			assert(filter.clean('what a bitch...fuck you') === 'what a *****...**** you');
+			assert(filter.clean('<p>Don\'t be an asshole</p>') === '<p>Don\'t be an *******</p>');
+		});
 	});
 });
