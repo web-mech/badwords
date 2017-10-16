@@ -61,6 +61,9 @@ filter.removeWords('hells');
 filter.clean("some hells word!"); //some hells word!
 ```
 
+### API
+
+
 ## Testing
 ```
 npm test
