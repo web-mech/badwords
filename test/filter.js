@@ -33,5 +33,9 @@ describe('filter', function(){
 			assert(filter.clean('what a bitch...fuck you') === 'what a *****...**** you');
 			assert(filter.clean('<p>Don\'t be an asshole</p>') === '<p>Don\'t be an *******</p>');
 		});
+
+		it('Should filter words that are derivatives of words from the filter blacklist', function() {
+			assert(filter.clean('shitshit') === '********');
+    });
 	});
 });
