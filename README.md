@@ -123,6 +123,7 @@ Add words to whitelist filter
 
     npm test
 
+
 ## Release Notes
 
 -   v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list.
