@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R spec"
+    "test": "./node_modules/.bin/mocha -R spec",
+    "docs": "./node_modules/.bin/documentation readme --section API ./lib/badwords.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,9 @@
     "badwords-list": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "1.14.0",
-    "better-assert": "1.0.0"
+    "better-assert": "1.0.0",
+    "documentation": "^5.3.3",
+    "mocha": "1.14.0"
   },
   "author": "Mike P.",
   "license": "MIT"
