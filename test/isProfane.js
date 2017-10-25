@@ -24,5 +24,12 @@ describe('filter', function(){
 		it('Should detect filtered words from badwords-list', function(){
 			assert(filter.isProfane('willies'));
 		});
+
+		it('Should detect filtered words regardless of type case', function() {
+			var filter = new Filter({
+				list: ['Test']
+			});
+			assert(filter.isProfane('test'));
+		});
 	});
 });
