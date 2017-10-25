@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/web-mech/badwords/compare/v1.6.0...v1.6.1) (2017-10-25)
+
+
+### Bug Fixes
+
+* **isProfaneLike:** fix case sensitive checks within list ([bfa05ce](https://github.com/web-mech/badwords/commit/bfa05ce))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/web-mech/badwords/compare/v1.5.2...v1.6.0) (2017-10-16)
 
