@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.2"></a>
+## [1.6.2](https://github.com/web-mech/badwords/compare/v1.6.1...v1.6.2) (2018-08-02)
+
+
+### Bug Fixes
+
+* **isProfaneLike:** abort trying to match every instance of profane words. ([31126d6](https://github.com/web-mech/badwords/commit/31126d6))
+
+
+
 <a name="1.6.1"></a>
 ## [1.6.1](https://github.com/web-mech/badwords/compare/v1.6.0...v1.6.1) (2017-10-25)
 
