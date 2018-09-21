@@ -31,5 +31,9 @@ describe('filter', function(){
 			});
 			assert(filter.isProfane('test'));
 		});
+
+		it('Should tokenize words according to regex word boundaries', function() {
+			assert(filter.isProfane("that person is an\nasshole"));
+		})
 	});
 });
