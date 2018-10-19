@@ -34,6 +34,11 @@ describe('filter', function(){
 
 		it('Should tokenize words according to regex word boundaries', function() {
 			assert(filter.isProfane("that person is an\nasshole"));
-		})
+		});
+
+		it('Should detect bad word phrases', function () {
+			filter.addWords('oh no');
+			assert(filter.isProfane("oh no! this is profane!"));
+		});
 	});
 });
