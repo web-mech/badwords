@@ -48,6 +48,12 @@ var filter = new Filter({ replaceRegex:  /[A-Za-z0-9가-힣_]/g });
 ```js
 var filter = new Filter(); 
 
+filter.addWords('some', 'bad', 'word');
+
+filter.clean("some bad word!") //**** *** ****!
+
+//or use an array using the spread operator
+
 var newBadWords = ['some', 'bad', 'word'];
 
 filter.addWords(...newBadWords);
@@ -73,7 +79,7 @@ filter.clean('hell this wont clean anything'); //hell this wont clean anything
 ```js
 let filter = new Filter(); 
 
-filter.removeWords('hells');
+filter.removeWords('hells' 'sadist');
 
 filter.clean("some hells word!"); //some hells word!
 
