@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.5"></a>
+## [1.6.5](https://github.com/web-mech/badwords/compare/v1.6.4...v1.6.5) (2018-10-23)
+
+
+
 <a name="1.6.4"></a>
 ## [1.6.4](https://github.com/web-mech/badwords/compare/v1.6.3...v1.6.4) (2018-09-21)
 
