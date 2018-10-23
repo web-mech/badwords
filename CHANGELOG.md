@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/web-mech/badwords/compare/v2.0.0...v3.0.0) (2018-10-23)
+
+
+### Code Refactoring
+
+* utilize es6 spread in addWords/removeWords ([656b87c](https://github.com/web-mech/badwords/commit/656b87c))
+
+
+### BREAKING CHANGES
+
+* changes the way addWords is used, no longer accepts a single array as a parameter unless used with the spread operator
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/web-mech/badwords/compare/v1.6.5...v2.0.0) (2018-10-23)
 
