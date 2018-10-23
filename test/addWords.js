@@ -18,7 +18,7 @@ describe('filter', function(){
     });
 
     it('Should allow a list to be passed to the constructor', function() {
-      var filter = new Filter({
+      filter = new Filter({
         list: ['dog']
       });
 
