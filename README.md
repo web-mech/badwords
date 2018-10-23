@@ -48,7 +48,9 @@ var filter = new Filter({ replaceRegex:  /[A-Za-z0-9가-힣_]/g });
 ```js
 var filter = new Filter(); 
 
-filter.addWords(['some', 'bad', 'word']);
+var newBadWords = ['some', 'bad', 'word'];
+
+filter.addWords(...newBadWords);
 
 filter.clean("some bad word!") //**** *** ****!
 
@@ -69,11 +71,20 @@ filter.clean('hell this wont clean anything'); //hell this wont clean anything
 ### Remove words from the blacklist
 
 ```js
-var filter = new Filter(); 
+let filter = new Filter(); 
 
 filter.removeWords('hells');
 
 filter.clean("some hells word!"); //some hells word!
+
+//or use an array using the spread operator
+
+let removeWords = ['hells', 'sadist'];
+
+filter.removeWords(...removeWords);
+
+filter.clean("some sadist hells word!"); //some sadist hells word!
+
 ```
 
 ### API
