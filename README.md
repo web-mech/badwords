@@ -12,7 +12,7 @@ As of version 2, requires you either have an environment that understands ES2016
 
 ## Installation
 
-    npm install bad-words
+    npm install bad-words --save
 
 ## Usage
 
