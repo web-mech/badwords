@@ -29,5 +29,8 @@
     "mocha": "^5.2.0"
   },
   "author": "Mike P.",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  }
 }
