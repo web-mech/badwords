@@ -5,8 +5,8 @@ var Filter = require('../lib/badwords.js'),
 
 describe('filter', () => {
   describe('removeWords',() => {
-    it('Should allow you to remove words from the filter blacklist and no longer filter them', () => {
-      filter.removeWords('hells');
+    it('Should allow you to remove words from the filter blacklist and no longer filter them (case-insensitive)', () => {
+      filter.removeWords('Hells');
       assert(filter.clean('This is a hells good test') === 'This is a hells good test');
     });
 
