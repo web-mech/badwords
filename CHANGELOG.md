@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/web-mech/badwords/compare/v3.0.0...v3.0.1) (2019-02-19)
+
+
+### Bug Fixes
+
+* update removeWords functionality to be case-insensitive ([235121d](https://github.com/web-mech/badwords/commit/235121d))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/web-mech/badwords/compare/v2.0.0...v3.0.0) (2018-10-23)
 
