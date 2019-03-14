@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.2"></a>
+## [3.0.2](https://github.com/web-mech/badwords/compare/v3.0.1...v3.0.2) (2019-03-14)
+
+
+### Bug Fixes
+
+* **lang.json:** remove gay from badwords ([88d1aed](https://github.com/web-mech/badwords/commit/88d1aed))
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/web-mech/badwords/compare/v3.0.0...v3.0.1) (2019-02-19)
 
