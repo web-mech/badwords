@@ -77,7 +77,7 @@ filter.clean('hell this wont clean anything'); //hell this wont clean anything
 ```js
 let filter = new Filter(); 
 
-filter.removeWords('hells' 'sadist');
+filter.removeWords('hells', 'sadist');
 
 filter.clean("some hells word!"); //some hells word!
 
