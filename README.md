@@ -29,7 +29,7 @@ console.log(filter.clean("Don't be an ash0le")); //Don't be an ******
 var Filter = require('bad-words');
 var customFilter = new Filter({ placeHolder: 'x'});
 
-customFilter.clean('Don't be an ash0le'); //Don't be an xxxxxx
+customFilter.clean("Don't be an ash0le"); //Don't be an xxxxxx
 ```
 
 ### Regex Overrides
