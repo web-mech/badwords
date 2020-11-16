@@ -41,7 +41,7 @@ var filter = new Filter({ replaceRegex:  /[A-Za-z0-9가-힣_]/g });
 //multilingual support for word filtering
 ```
 
-### Add words to the blacklist
+### Add words to the blocklist
 
 ```js
 var filter = new Filter(); 
@@ -72,7 +72,7 @@ var filter = new Filter({ emptyList: true });
 filter.clean('hell this wont clean anything'); //hell this wont clean anything
 ```
 
-### Remove words from the blacklist
+### Remove words from the blocklist
 
 ```js
 let filter = new Filter(); 
@@ -101,10 +101,10 @@ Filter constructor.
 **Parameters**
 
 -   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Filter instance options (optional, default `{}`)
-    -   `options.emptyList` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Instantiate filter with no blacklist
+    -   `options.emptyList` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Instantiate filter with no blocklist
     -   `options.list` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Instantiate filter with custom list
     -   `options.placeHolder` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Character used to replace profane words.
-    -   `options.regex` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Regular expression used to sanitize words before comparing them to blacklist.
+    -   `options.regex` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Regular expression used to sanitize words before comparing them to blocklist.
     -   `options.replaceRegex` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Regular expression used to replace profane words with placeHolder.
 
 #### isProfane
@@ -133,19 +133,19 @@ Evaluate a string for profanity and return an edited version.
 
 #### addWords
 
-Add word(s) to blacklist filter / remove words from whitelist filter
+Add word(s) to blocklist filter / remove words from allowlist filter
 
 **Parameters**
 
--   `word` **...[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Word(s) to add to blacklist
+-   `word` **...[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Word(s) to add to blocklist
 
 #### removeWords
 
-Add words to whitelist filter
+Add words to allowlist filter
 
 **Parameters**
 
--   `word` **...[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Word(s) to add to whitelist.
+-   `word` **...[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Word(s) to add to allowlist.
 
 ## Testing
 
