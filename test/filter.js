@@ -38,10 +38,16 @@ describe('filter', function(){
 
 		xit('Should filter words that are derivatives of words from the filter blacklist', function() {
 			assert(filter.clean('shitshit') === '********');
-    });
+		});
 
-    it('Shouldn\'t filter words that aren\'t profane.', function() {
+		it('Shouldn\'t filter words that aren\'t profane.', function() {
 			assert(filter.clean('hello there') === 'hello there');
-    });
+		});
+
+		it('Should handle strings with no word boundaries', function() {
+			assert(filter.clean('') === '');
+			assert(filter.clean('.') === '.');
+			assert(filter.clean('🙂') === '🙂');
+		});
 	});
 });
