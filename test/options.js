@@ -19,6 +19,14 @@ describe('options', function() {
       assert(filter.clean('mot en français') == 'mot en *******');
     });
 
+    it('should discard empty string from personalized list, if present', function() {
+      var personalized = "kafir,,hello";
+      var myList = personalized.split(",");
+      filter = new Filter({ emptyList: true });
+      filter.addWords(...myList);
+      assert(filter.clean('nice try') == 'nice try');
+      assert(filter.clean('hello mister') == '***** mister');
+    })
 
   });
 });
