@@ -3,22 +3,14 @@ var Filter = require('../lib/badwords.js'),
 assert = require('better-assert');
 
 describe('options', function() {
-  describe('split regex', function() {
+  describe('enhancedWordSep', function() {
 
-    it('default value', function() {
-      filter = new Filter();
-      filter.addWords('français');
-      assert(filter.clean('fucking asshole') == '******* *******');
-      assert(filter.clean('mot en français') == 'mot en français');
+    it('enhancedWordSep for accented characters', function() {
+      defaultFilter = new Filter();
+      accentsFilter = new Filter({enhancedWordSep: true});
+      assert(defaultFilter.clean('assécher') == '***écher');
+      assert(accentsFilter.clean('assécher') == 'assécher');
     });
-
-    it('override value', function() {
-      filter = new Filter({splitRegex: / /});
-      filter.addWords('français');
-      assert(filter.clean('fucking asshole') == '******* *******');
-      assert(filter.clean('mot en français') == 'mot en *******');
-    });
-
 
   });
 });
