@@ -13,5 +13,9 @@ describe('accents', function() {
     filter = new Filter({enhancedWordSep: true});
     const cleanText = "Bonjour,\nces cheveux sont asséchés.";
     assert(filter.clean(cleanText) === cleanText);
+
+    const dirtyText = "Hello,\nyou look like an asshole.";
+    const filteredText = "Hello,\nyou look like an *******.";
+    assert(filter.clean(dirtyText) === filteredText);
   });
 });
