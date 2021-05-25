@@ -6,8 +6,8 @@ var Filter = require('../lib/badwords.js'),
 describe('filter', function(){
 	describe('clean',function(){
 		it('Should replace a bad word within a sentence asterisks (******)',function(){
-			console.log(filter.clean('Don\'t be an ash0le'));
-			assert(filter.clean('Don\'t be an ash0le') === 'Don\'t be an ******');
+			console.log(filter.clean('áéñóú'));
+			assert(filter.clean('áéñóú') === 'áéñóú');
 
 		});
 
