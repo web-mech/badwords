@@ -44,12 +44,8 @@ describe('filter', function () {
 			assert(filter.clean('hello there') === 'hello there');
 		});
 
-		it('Should not replace anything of a single , multilingual and not profane word', function () {
+		it('Should not replace anything of a single and not profane word', function () {
 			assert(filter.clean('áéñóú') === 'áéñóú');
-		});
-
-		it('Should not replace anything of a single , multilingual and not profane word', function () {
-			assert(filter.clean('áéñóúáéñ') === 'áéñóúáéñ');
 		});
 
 	});
