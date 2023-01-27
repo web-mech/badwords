@@ -44,6 +44,10 @@ describe('filter', function () {
 			assert(filter.clean('hello there') === 'hello there');
 		});
 
+		it('Should seperate string with backspace or underscore', function () {
+			assert(filter.clean("Don't be an ash0le_word") === 'Don\'t be an ******word');
+
+		});
 		it('Should not replace anything of a single and not profane word', function () {
 			assert(filter.clean('áéñóú') === 'áéñóú');
 		});
