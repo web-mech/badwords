@@ -1,5 +1,5 @@
 require('assert');
-var Filter = require('../lib/badwords.js'),
+let Filter = require('../lib/badwords.js'),
   filter = new Filter(),
   assert = require('better-assert');
 
