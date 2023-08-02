@@ -1,5 +1,5 @@
 require('assert');
-var Filter = require('../lib/badwords.js'),
+let Filter = require('../lib/badwords.js'),
 	filter = new Filter(),
 	assert = require('better-assert');
 
@@ -26,7 +26,7 @@ describe('filter', function(){
 		});
 
 		it('Should detect filtered words regardless of type case', function() {
-			var filter = new Filter({
+			let filter = new Filter({
 				list: ['Test']
 			});
 			assert(filter.isProfane('test'));
