@@ -1,4 +1,10 @@
-test:
-	@./node_modules/mocha/bin/_mocha -R $(REPORTER)
+.PHONY: test build docs
 
-.PHONY: test
+test:
+	@yarn test
+
+build:
+	@yarn build
+
+docs:
+	@yarn docs && yarn typedoc
