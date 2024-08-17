@@ -62,3 +62,43 @@ test('clean: Should not replace anything of a single and not profane word', (t) 
   const filter = new Filter()
   t.is(filter.clean('áéñóú'), 'áéñóú')
 })
+
+test('clean: Should not throw exceptions when nothing but whitespace passed to filter', (t) => {
+  const filter = new Filter()
+  const testString = `
+
+
+
+  `
+
+  const testString2 = `
+
+
+
+  Hello
+
+  `
+
+  const testString3 = `
+
+
+
+    Fuck
+
+
+    `
+  t.is(filter.clean(testString), testString)
+  t.is(filter.clean(testString2), testString2)
+  t.is(
+    filter.clean(testString3),
+    `
+
+
+
+    ****
+
+
+    `,
+  )
+  t.is(filter.clean(''), '')
+})
