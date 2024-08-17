@@ -26,7 +26,6 @@
     "rc": "npm version prerelease && git push --follow-tags && npm publish",
     "release": "standard-version && git push --follow-tags && npm publish",
     "test": "ava",
-    "docs": "./node_modules/.bin/documentation readme --section API ./src/badwords.ts",
     "typedoc": "typedoc --out docs ./src/badwords.ts"
   },
   "repository": {
