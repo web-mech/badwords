@@ -1,0 +1,29 @@
+name: Format
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20
+      - run: yarn install
+      - run: |
+          yarn lint:fix
+          yarn prettier
+      - name: Create Lint PR
+        uses: peter-evans/create-pull-request@v6.0.5
+        with:
+          base: ${{ github.head_ref }}
+          commit-message: 'style: ESlint + Prettier Lint'
+          title: ESlint + Prettier Format
+          body: Format * to standard format.
+          branch: ${{ github.event.pull_request.head.ref }}-fmt
+          add-paths: |
+            src/*

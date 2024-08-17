@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+      - run: yarn install
+      - run: yarn global add standard-version
+      - run: git config --global user.email "action@github.com"
+      - run: git config --global user.name "GitHub Action"
+      - uses: EndBug/add-and-commit@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: standard-version
+      - run: git push --follow-tags origin main && npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
