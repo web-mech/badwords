@@ -7,4 +7,4 @@ build:
 	@yarn build
 
 docs:
-	@yarn docs && yarn typedoc
+	@yarn typedoc

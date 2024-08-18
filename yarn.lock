@@ -1933,10 +1933,10 @@ babylon@^6.18.0:
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
   integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
 
-badwords-list@^2.0.1-3:
-  version "2.0.1-3"
-  resolved "https://registry.yarnpkg.com/badwords-list/-/badwords-list-2.0.1-3.tgz#8eaaa6e9df7676027224fb91616a7de6d9e4d4d6"
-  integrity sha512-nhL0LTLFeiCVGc0W8vM5/A5SOkuNsC+HCbt9dMoZh+Dyn0Rb++mllinmCnliWUZWqg7R0pzTNjX3I+RiPcvKHQ==
+badwords-list@^2.0.1-4:
+  version "2.0.1-4"
+  resolved "https://registry.yarnpkg.com/badwords-list/-/badwords-list-2.0.1-4.tgz#a6705b6f1c775f795bce1f34b854e44b44bf64a0"
+  integrity sha512-FxfZUp7B9yCnesNtFQS9v6PvZdxTYa14Q60JR6vhjdQdWI4naTjJIyx22JzoER8ooeT8SAAKoHLjKfCV7XgYUQ==
 
 bail@^1.0.0:
   version "1.0.5"

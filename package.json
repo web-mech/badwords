@@ -1,6 +1,6 @@
 {
   "name": "bad-words",
-  "version": "3.0.4",
+  "version": "4.0.0-0",
   "description": "A javascript filter for bad words",
   "main": "dist/index.js",
   "type": "module",
@@ -23,7 +23,7 @@
     "build": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.esm.json",
     "prepublishOnly": "tsc",
     "prepare": "husky && tsc",
-    "rc": "npm version prerelease && git push --follow-tags && npm publish",
+    "rc": "standard-version --prerelease && git push --follow-tags && npm publish",
     "release": "standard-version && git push --follow-tags && npm publish",
     "test": "ava",
     "typedoc": "typedoc --out docs ./src/badwords.ts"
@@ -39,7 +39,7 @@
     "filter"
   ],
   "dependencies": {
-    "badwords-list": "^2.0.1-3"
+    "badwords-list": "^2.0.1-4"
   },
   "devDependencies": {
     "@ava/typescript": "^5.0.0",
