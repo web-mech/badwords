@@ -39,7 +39,7 @@
     "filter"
   ],
   "dependencies": {
-    "badwords-list": "^2.0.1-3"
+    "badwords-list": "^2.0.1-4"
   },
   "devDependencies": {
     "@ava/typescript": "^5.0.0",
