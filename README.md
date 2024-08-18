@@ -93,7 +93,7 @@ filter.clean('some sadist hells word!') //some sadist hells word!
 
 ## API Reference
 
-Check out [!TypeDoc Documentation](https://web-mech.github.io/badwords/)
+Check out [TypeDoc Documentation](https://web-mech.github.io/badwords/)
 
 ## Testing
 
