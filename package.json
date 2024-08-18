@@ -23,8 +23,8 @@
     "build": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.esm.json",
     "prepublishOnly": "tsc",
     "prepare": "husky && tsc",
-    "rc": "standard-version --prerelease && git push --follow-tags && npm publish",
-    "release": "standard-version && git push --follow-tags && npm publish",
+    "rc": "standard-version --prerelease && git push --follow-tags",
+    "release": "standard-version && git push --follow-tags",
     "test": "ava",
     "typedoc": "typedoc --out docs ./src/badwords.ts"
   },
